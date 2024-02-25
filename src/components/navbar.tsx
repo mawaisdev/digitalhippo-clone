@@ -1,5 +1,6 @@
 import Link from 'next/link'
 
+import { Cart } from '@/components/cart'
 import { Icons } from '@/components/icons'
 import { NavItems } from '@/components/nav-items'
 import { MaxWidthWrapper } from '@/components/max-width-wrapper'
@@ -65,7 +66,9 @@ export const Navbar = () => {
                     </div>
                   )}
 
-                  <div className='ml-4 flow-root lg:ml-6'>Cart</div>
+                  <div className='ml-4 flow-root lg:ml-6'>
+                    <Cart />
+                  </div>
                 </div>
               </div>
             </div>
